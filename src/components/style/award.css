@@ -1,0 +1,20 @@
+/* AWARD SECTION STYLING*/
+.section-award{
+    background-color: #222;
+    height: 100vh;
+  }
+  .section-award h1{
+    color: white;
+    font-size:50px;
+    padding-top:56px;
+  }
+  .award-content{
+    padding-top:30px;
+    padding-left: 30px;
+  }
+  h3{
+    color:white;
+  }
+  code{
+    color:white;
+  }
