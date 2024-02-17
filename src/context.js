@@ -4,9 +4,16 @@ import { useCallback } from 'react'
 const AppContext = React.createContext()
 const AppProvider=({children})=>{
     const[loading,setLoading] = useState(false)
+    const[isModalOpen,setIsModalOpen] = useState(false)
+    const OpenModal =()=>{
+      setIsModalOpen(true)
+    }
+    const CloseModal =()=>{
+      setIsModalOpen(false)
+    }
     return(
         <AppContext.Provider
-         value={{loading}}> {children}
+         value={{isModalOpen,OpenModal,CloseModal}}> {children}
 
         </AppContext.Provider>
     )

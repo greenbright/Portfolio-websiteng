@@ -3,13 +3,41 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { AppProvider } from './context';
+import Award from './components/award'
+import About from './components/aboutme'
+import Project from './components/project'
 
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+  },
+  
+  {
+    path: "/award",
+    element: <Award/>,
+  },
+  {
+   path: "/community",
+   element: <About/>,
+  },
+  {
+    path: "/project",
+    element: <Project/>,
+   }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AppProvider>
+    <RouterProvider router={router} />
+    </AppProvider>
   </React.StrictMode>
 );
 

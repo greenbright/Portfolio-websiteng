@@ -1,14 +1,21 @@
 import React from 'react'
+import '../index.css'
+import Navbar from './Navbar';
+import { useGlobalContext } from '../context';
 import { toast } from 'react-toastify';
 import WebAnimation from '../components/images/web-about-us.jpg'
 import {FaFacebookSquare} from 'react-icons/fa'
 import {FaLinkedin} from 'react-icons/fa'
 import {FaTwitter} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
+import Form from './compo/form'
 const PDF_FILE_URL = 'http://localhost:3000/Dev-Resume-Doc.pdf';
 
 
-function About({opentoggle}) {
+function About({open}) {
+  const {OpenModal} = useGlobalContext()
+  console.log(OpenModal)
+  
   const downloadFileAtUrl=(url)=>{
     const fileName = url.split('/').pop()
    const aTag = document.createElement('a')
@@ -22,6 +29,8 @@ function About({opentoggle}) {
   
   return (
     <section className='section-about-header'>
+     
+      <Form/>
       <div className='about-header'>
       
          <img src={WebAnimation} alt="animation images" className='about-web-ani'/>
@@ -31,7 +40,7 @@ function About({opentoggle}) {
         <p>I am a fullstack developer with a passion of developing small and larger project around Web3 and mobile application.My top four favourite resources for learning are </p>
         <span>Freecodecamp</span>| <span>Udemy</span>| <span>Traversy media</span>| <span>stackoverflow</span>
            <div className='about-btn'>
-           <button className='about-btn-hire' onClick={opentoggle}>Hire me</button>
+           <button className='about-btn-hire' onClick={OpenModal}>Hire me</button>
            <button className='about-btn-resume'onClick={()=>{downloadFileAtUrl(PDF_FILE_URL )}}>Resume</button>
            </div>
            <div className='about-social-media'>

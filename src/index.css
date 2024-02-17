@@ -171,6 +171,9 @@ p,span{
   font-size:18px;
 }
 
+.code-color{
+  color:antiquewhite;
+}
 
 .des-para{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -387,12 +390,7 @@ width:190px;
 }
 
 /*  MEDIA QUERY -MOBILE RESPONSIVENESS IF SCREEN IS EQUAL TO 800PX OR LESS THAN 800PX*/
-@media screen and (max-width: 800px){
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   
   a {
     text-decoration: none;
@@ -552,6 +550,6 @@ width:190px;
   text-align: center;
   cursor:pointer;
 }
-}
+
 
 

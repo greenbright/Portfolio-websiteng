@@ -1,12 +1,14 @@
 import React from 'react'
 import {useRef} from 'react'
+import { useGlobalContext } from '../../context';
 import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 import {FaTimes} from 'react-icons/fa'
 
 
 
-function Form({openmodal,closemodal,open}) {
+function Form() {
+  const{isModalOpen,CloseModal} = useGlobalContext()
   const form = useRef()
   const sendEmail =(e)=>{
     e.preventDefault();
@@ -27,7 +29,7 @@ function Form({openmodal,closemodal,open}) {
       });
   }
   return (
-    <div className={`${open?'modal-overlay show-modal':'modal-overlay'}`}>
+    <div className={`${isModalOpen ?'modal-overlay show-modal':'modal-overlay'}`}>
       <div className="form-container">
         <h3>Contact Me</h3>
         <form ref={form} onSubmit={sendEmail} className='form-area'>
@@ -37,7 +39,7 @@ function Form({openmodal,closemodal,open}) {
             <div>
              <button type="submit" value="send" className='btn-add'>Send</button>
             </div>
-             <button className='close-modal-btn' onClick={closemodal}><FaTimes/></button>
+             <button className='close-modal-btn' onClick={CloseModal}><FaTimes/></button>
         </form>
       </div>
     </div>

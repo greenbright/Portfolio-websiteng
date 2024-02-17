@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Comfortaa:wght@300&family=Dancing+Script:wght@400;500&family=Noto+Sans&family=Playfair+Display&display=swap');
 
+::root{
+  --mainWhite: #fff;
+  --maingold: rgb(133, 100, 15);
+  --mainBackground: #f1f5f8;
+  --mainOverlay: rgba(35, 10, 36, 0.4);
+  --mainBlack: #222;
+}
 *,
 ::after,
 ::before, body{
@@ -10,83 +17,72 @@
  
 }
 
-
-.blue{
+.header-1{
+  font-size:5rem;
+}
+.icon-image{
+  color:white;
+  font-size:2rem;
+}
+.header-2{
+  margin-top:60px;
+  background-color:rgb(124, 124, 11);
+  width:75%;
+  height:40px;
+  font-size:23px;
+  text-align: center;
+  border-radius: 10px;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 2px;
+}
+.portfolio-container{
     background-image:url('../images/blackimage-1.jpg');
     height: 98vh;
     color:white;
     width: 100%;
   }
-
-  .full-stack{
-    padding-top: 100px;
-    text-align: center;
+  .portfolio-nav{
+    padding-top:60px;
+    margin-left:59%;
   }
- 
-  .packages{
-    letter-spacing: 45px;
-  }
-  .main-stack{
-    padding-top:45px;
-  }
-  .features{
-    display:flex;
-    gap:80px;
-    margin-top:50px;
-    margin-left:40px;
-    height:50px;
-    width:88%;
-    
-  }
-  .design-head,.codes-head,.test-deploy-head{
-    gap:50px;
-   
-  }
-  
-  .full-dev{
-   color:rgb(133, 100, 15);
-    border-left:solid ;
-    border-right: solid;
-    border-width: 30px;
-    border-color:rgb(133, 100, 15) ;
-    
-  
-  }
-  .codes, .design ,.testing{
-    height:100px;
-    width:150px;
+  .portfolio-link-1{
+    background-color:rgb(124, 124, 11);
+    margin:0 1rem;
+    width: 150px;
+    height:60px;
+    font-size:1.8rem;
     border-radius: 12px;
-    border-color: white;
-    border-style: solid;
+    text-decoration:none;
+  }
+  .link-1{
+   text-decoration: none;
+   color:var(--mainWhite);
   }
 
-  @media screen and (max-width: 800px){
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      
-      a {
-        text-decoration: none;
-        color: var(--mainBlack);
-      
-      }
-      .features{
-        grid-template-columns:100px 200px 100px;
-        gap:20px;
-        margin-top:50px;
-        margin-left:40px;
-        height:50px;
-        width:88%;
-        
-      }
-      .design-head,.codes-head,.test-deploy-head{
-        gap:30px;
-       
-      }
-      .design-head,.codes-head,.test-deploy-head h3{
-        font-family: 'Franklin Gothic Medium','Arial Narrow', Arial, sans-serif;
-      }
+  .portfolio-display{
+    display: flex;
     
+    
+  }
+  .portfolio-image{
+    height: 100vh;
+    width: 178vh;
+    margin-left:4%;
+    margin-top: 40px;
+  }
+  .portfolio-text{
+    margin-top:5%;
+   margin-left:10%;
+  }
+  
+  .image-1{
+    border-radius: 80px;
+    border-style: solid;
+    border-color: rgb(244, 244, 90);
+    border-width: 8px;
+    height: 40%;
+    width:40%;
+    margin-right:50px;
+    margin-top:50px;
   }

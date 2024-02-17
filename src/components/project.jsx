@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from './Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import BlackImage from './images/blackimage-1.jpg'
 import ExcelImage from './images/excel-pix.png'
@@ -13,6 +14,7 @@ import Currency from './images/currency-convertor.png'
 function Project() {
   return ( 
   <section className='section-project-header'>
+    
   <h3 className='text-center projects-font'>Projects</h3>
   <div className='project-content'>
   <div className='g-col-4'>
