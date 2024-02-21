@@ -1,6 +1,5 @@
 import React from 'react'
-import '../index.css'
-import Navbar from './Navbar';
+import './style/about.css'
 import { useGlobalContext } from '../context';
 import { toast } from 'react-toastify';
 import WebAnimation from '../components/images/web-about-us.jpg'

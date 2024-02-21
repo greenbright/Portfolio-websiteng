@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import './style/award.css'
 import Awardpix from './images/award.png'
-import { useGlobalContext } from '../context'
-//import resume from './doc/Dev-Resume-Doc.pdf';
+
 
 function Award() {
   return (

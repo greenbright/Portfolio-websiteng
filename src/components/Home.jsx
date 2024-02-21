@@ -1,10 +1,9 @@
 import React from 'react'
-import { useState , useRef,useEffect, useContext} from 'react'
+import { useRef, useContext} from 'react'
 import { AppContext } from '../context'
 import './style/content.css'
 import{Link} from 'react-router-dom'
 import MyImage from '../components/images/zmes2.jpg'
-import {FaListUl,FaBars,FaTimes} from 'react-icons/fa'
 import { GrProjects } from "react-icons/gr";
 
 

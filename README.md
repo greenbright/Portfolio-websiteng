@@ -73,3 +73,9 @@ github token = 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
 
  second token-terminal-git = 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
  https://github.com/adrianhajdin/proje...
+
+
+
+
+ AMAZON MECHANICAL TURK WORK ID 
+ AMAZON MECHANICAL TURK WORK ID :AFK82Y916TYN2
